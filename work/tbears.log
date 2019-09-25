@@ -1,0 +1,358 @@
+2019-08-22 13:42:52,721 15822 4651886016 INFO icon_service_cli.py(132) LOG start_server() start
+2019-08-22 13:42:52,726 15822 4651886016 INFO icon_service_cli.py(156) LOG start_process() end
+2019-08-22 13:42:52,726 15822 4651886016 INFO icon_service_cli.py(115) IconServiceCli start_command done!
+2019-08-22 13:42:52,956 15826 4666058176 INFO icon_rpcserver_cli.py(160) IconRpcServerCli check_if_process_running!
+2019-08-22 13:42:53,080 15826 4666058176 INFO icon_rpcserver_cli.py(109) IconRpcServerCli start_command done!
+2019-08-22 13:42:53,680 15824 4669466048 INFO icon_logger_util.py(143) ====================LOG CONFIG START====================
+2019-08-22 13:42:53,680 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.log.logger] > tbears
+2019-08-22 13:42:53,680 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.log.level] > info
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.log.filePath] > ./tbears.log
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.log.colorLog] > True
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.log.outputType] > file
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.log.rotate.type] > bytes
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.log.rotate.maxBytes] > 10485760
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.log.rotate.backupCount] > 10
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.scoreRootPath] > ./.score
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.stateDbRootPath] > ./.statedb
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.channel] > loopchain_default
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.amqpKey] > 7100
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.amqpTarget] > 127.0.0.1
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.builtinScoreOwner] > hxebf3a409845cd09dcb5af31ed5be5e34e2af9433
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.service.fee] > False
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.service.audit] > False
+2019-08-22 13:42:53,681 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.service.deployerWhiteList] > False
+2019-08-22 13:42:53,682 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.service.scorePackageValidator] > False
+2019-08-22 13:42:53,682 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.iissMetaData.rewardMin] > 200
+2019-08-22 13:42:53,682 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.iissMetaData.rewardMAX] > 1200
+2019-08-22 13:42:53,682 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.iissMetaData.rewardPoint] > 7000
+2019-08-22 13:42:53,682 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.iissMetaData.lockMin] > 216000
+2019-08-22 13:42:53,682 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.iissMetaData.lockMax] > 864000
+2019-08-22 13:42:53,682 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.iissCalculatePeriod] > 43200
+2019-08-22 13:42:53,682 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.termPeriod] > 43200
+2019-08-22 13:42:53,682 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.initialIRep] > 50000000000000000000000
+2019-08-22 13:42:53,682 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.prepRegistrationFee] > 2000000000000000000000
+2019-08-22 13:42:53,682 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.mainPRepCount] > 22
+2019-08-22 13:42:53,682 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.mainAndSubPRepCount] > 100
+2019-08-22 13:42:53,683 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.decentralizeTrigger] > 0.002
+2019-08-22 13:42:53,683 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.hostAddress] > 127.0.0.1
+2019-08-22 13:42:53,683 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.port] > 9000
+2019-08-22 13:42:53,683 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.genesis.nid] > 0x3
+2019-08-22 13:42:53,683 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.genesis.accounts] > [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]
+2019-08-22 13:42:53,683 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.blockConfirmInterval] > 10
+2019-08-22 13:42:53,683 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.blockConfirmEmpty] > True
+2019-08-22 13:42:53,683 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.verbose] > False
+2019-08-22 13:42:53,683 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.command] > start
+2019-08-22 13:42:53,683 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.config] > ./temp_conf.json
+2019-08-22 13:42:53,683 15824 4669466048 INFO icon_logger_util.py(152) [CONFIG.tbearsMode] > False
+2019-08-22 13:42:53,683 15824 4669466048 INFO icon_logger_util.py(145) ====================LOG CONFIG END======================
+2019-08-22 13:42:53,785 15824 4669466048 INFO icon_service.py(63) IconService ==========IconService Service params==========
+2019-08-22 13:42:53,785 15824 4669466048 INFO icon_service.py(64) IconService score_root_path : ./.score
+2019-08-22 13:42:53,785 15824 4669466048 INFO icon_service.py(65) IconService icon_score_state_db_root_path  : ./.statedb
+2019-08-22 13:42:53,785 15824 4669466048 INFO icon_service.py(66) IconService amqp_target  : 127.0.0.1
+2019-08-22 13:42:53,785 15824 4669466048 INFO icon_service.py(67) IconService amqp_key  :  7100
+2019-08-22 13:42:53,785 15824 4669466048 INFO icon_service.py(68) IconService icon_score_queue_name  : IconScore.loopchain_default.7100
+2019-08-22 13:42:53,786 15824 4669466048 INFO icon_service.py(69) IconService ==========IconService Service params==========
+2019-08-22 13:42:53,786 15824 4669466048 INFO icon_inner_service.py(55) IconInnerService icon_score_service open
+2019-08-22 13:42:55,000 15825 4371895744 INFO icon_logger_util.py(143) ====================LOG CONFIG START====================
+2019-08-22 13:42:55,001 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.hostAddress] > 127.0.0.1
+2019-08-22 13:42:55,001 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.port] > 9000
+2019-08-22 13:42:55,001 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.scoreRootPath] > ./.score
+2019-08-22 13:42:55,001 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.stateDbRootPath] > ./.statedb
+2019-08-22 13:42:55,001 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.log.logger] > tbears
+2019-08-22 13:42:55,001 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.log.level] > info
+2019-08-22 13:42:55,001 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.log.filePath] > ./tbears.log
+2019-08-22 13:42:55,002 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.log.colorLog] > True
+2019-08-22 13:42:55,002 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.log.outputType] > file
+2019-08-22 13:42:55,002 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.log.rotate.type] > bytes
+2019-08-22 13:42:55,002 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.log.rotate.maxBytes] > 10485760
+2019-08-22 13:42:55,002 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.log.rotate.backupCount] > 10
+2019-08-22 13:42:55,002 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.service.fee] > False
+2019-08-22 13:42:55,002 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.service.audit] > False
+2019-08-22 13:42:55,003 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.service.deployerWhiteList] > False
+2019-08-22 13:42:55,003 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.genesis.nid] > 0x3
+2019-08-22 13:42:55,003 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.genesis.accounts] > [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]
+2019-08-22 13:42:55,003 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.channel] > loopchain_default
+2019-08-22 13:42:55,003 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.amqpKey] > 7100
+2019-08-22 13:42:55,003 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.amqpTarget] > 127.0.0.1
+2019-08-22 13:42:55,003 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.blockConfirmInterval] > 10
+2019-08-22 13:42:55,003 15825 4371895744 INFO icon_logger_util.py(152) [CONFIG.blockConfirmEmpty] > True
+2019-08-22 13:42:55,004 15825 4371895744 INFO icon_logger_util.py(145) ====================LOG CONFIG END======================
+2019-08-22 13:42:55,114 15825 4371895744 INFO block_manager.py(81) tbears_block_manager ==========tbears block_manager params==========
+2019-08-22 13:42:55,115 15825 4371895744 INFO block_manager.py(82) tbears_block_manager amqp_target : 127.0.0.1
+2019-08-22 13:42:55,115 15825 4371895744 INFO block_manager.py(83) tbears_block_manager amqp_key    : 7100
+2019-08-22 13:42:55,115 15825 4371895744 INFO block_manager.py(84) tbears_block_manager queue_name  : Channel.loopchain_default.7100
+2019-08-22 13:42:55,115 15825 4371895744 INFO block_manager.py(85) tbears_block_manager             : ChannelTxCreator.loopchain_default.7100
+2019-08-22 13:42:55,115 15825 4371895744 INFO block_manager.py(86) tbears_block_manager             : IconScore.loopchain_default.7100
+2019-08-22 13:42:55,115 15825 4371895744 INFO block_manager.py(87) tbears_block_manager ==========tbears block_manager params==========
+2019-08-22 13:42:55,368 15831 4482024896 INFO icon_logger_util.py(143) ====================LOG CONFIG START====================
+2019-08-22 13:42:55,368 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.log.logger] > tbears
+2019-08-22 13:42:55,368 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.log.level] > info
+2019-08-22 13:42:55,369 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.log.filePath] > ./tbears.log
+2019-08-22 13:42:55,369 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.log.colorLog] > True
+2019-08-22 13:42:55,370 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.log.outputType] > file
+2019-08-22 13:42:55,370 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.log.rotate.type] > bytes
+2019-08-22 13:42:55,370 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.log.rotate.maxBytes] > 10485760
+2019-08-22 13:42:55,370 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.log.rotate.backupCount] > 10
+2019-08-22 13:42:55,370 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.channel] > loopchain_default
+2019-08-22 13:42:55,370 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.port] > 9000
+2019-08-22 13:42:55,370 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.portDiffRestServiceContainer] > 1900
+2019-08-22 13:42:55,370 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.amqpKey] > 7100
+2019-08-22 13:42:55,371 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.amqpTarget] > 127.0.0.1
+2019-08-22 13:42:55,371 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.gunicornWorkerCount] > 9
+2019-08-22 13:42:55,371 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.disableV1Api] > True
+2019-08-22 13:42:55,371 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.restSslType] > 0
+2019-08-22 13:42:55,371 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.defaultSslCertPath] > resources/ssl_test_cert/cert.pem
+2019-08-22 13:42:55,371 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.defaultSslKeyPath] > resources/ssl_test_cert/key.pem
+2019-08-22 13:42:55,371 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.defaultSslTrustCertPath] > resources/ssl_test_ca/cert.pem
+2019-08-22 13:42:55,371 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.ipLocal] > 127.0.0.1
+2019-08-22 13:42:55,372 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.grpcTimeout] > 30
+2019-08-22 13:42:55,372 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.grpcRetry] > 5
+2019-08-22 13:42:55,372 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.restAdditionalTimeout] > 30
+2019-08-22 13:42:55,372 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.scoreQueryTimeout] > 120
+2019-08-22 13:42:55,372 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.wsHeartBeatTime] > 30
+2019-08-22 13:42:55,372 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.requestMaxSize] > 2097152
+2019-08-22 13:42:55,372 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.hostAddress] > 127.0.0.1
+2019-08-22 13:42:55,372 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.scoreRootPath] > ./.score
+2019-08-22 13:42:55,372 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.stateDbRootPath] > ./.statedb
+2019-08-22 13:42:55,373 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.service.fee] > False
+2019-08-22 13:42:55,373 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.service.audit] > False
+2019-08-22 13:42:55,373 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.service.deployerWhiteList] > False
+2019-08-22 13:42:55,373 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.genesis.nid] > 0x3
+2019-08-22 13:42:55,373 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.genesis.accounts] > [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]
+2019-08-22 13:42:55,373 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.blockConfirmInterval] > 10
+2019-08-22 13:42:55,373 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.blockConfirmEmpty] > True
+2019-08-22 13:42:55,373 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.verbose] > False
+2019-08-22 13:42:55,373 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.command] > start
+2019-08-22 13:42:55,374 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.config] > ./temp_conf.json
+2019-08-22 13:42:55,374 15831 4482024896 INFO icon_logger_util.py(152) [CONFIG.tbearsMode] > True
+2019-08-22 13:42:55,374 15831 4482024896 INFO icon_logger_util.py(145) ====================LOG CONFIG END======================
+2019-08-28 13:50:32,241 39388 4612933056 INFO icon_service_cli.py(132) LOG start_server() start
+2019-08-28 13:50:32,275 39388 4612933056 INFO icon_service_cli.py(156) LOG start_process() end
+2019-08-28 13:50:32,275 39388 4612933056 INFO icon_service_cli.py(115) IconServiceCli start_command done!
+2019-08-28 13:50:32,591 39398 4623009216 INFO icon_rpcserver_cli.py(160) IconRpcServerCli check_if_process_running!
+2019-08-28 13:50:32,691 39398 4623009216 INFO icon_rpcserver_cli.py(109) IconRpcServerCli start_command done!
+2019-08-28 13:50:33,118 39392 4572194240 INFO icon_logger_util.py(143) ====================LOG CONFIG START====================
+2019-08-28 13:50:33,118 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.log.logger] > tbears
+2019-08-28 13:50:33,118 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.log.level] > info
+2019-08-28 13:50:33,118 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.log.filePath] > ./tbears.log
+2019-08-28 13:50:33,119 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.log.colorLog] > True
+2019-08-28 13:50:33,119 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.log.outputType] > file
+2019-08-28 13:50:33,119 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.log.rotate.type] > bytes
+2019-08-28 13:50:33,119 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.log.rotate.maxBytes] > 10485760
+2019-08-28 13:50:33,119 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.log.rotate.backupCount] > 10
+2019-08-28 13:50:33,119 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.scoreRootPath] > ./.score
+2019-08-28 13:50:33,119 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.stateDbRootPath] > ./.statedb
+2019-08-28 13:50:33,119 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.channel] > loopchain_default
+2019-08-28 13:50:33,119 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.amqpKey] > 7100
+2019-08-28 13:50:33,119 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.amqpTarget] > 127.0.0.1
+2019-08-28 13:50:33,119 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.builtinScoreOwner] > hxebf3a409845cd09dcb5af31ed5be5e34e2af9433
+2019-08-28 13:50:33,119 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.service.fee] > False
+2019-08-28 13:50:33,119 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.service.audit] > False
+2019-08-28 13:50:33,120 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.service.deployerWhiteList] > False
+2019-08-28 13:50:33,120 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.service.scorePackageValidator] > False
+2019-08-28 13:50:33,120 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.iissMetaData.rewardMin] > 200
+2019-08-28 13:50:33,120 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.iissMetaData.rewardMAX] > 1200
+2019-08-28 13:50:33,120 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.iissMetaData.rewardPoint] > 7000
+2019-08-28 13:50:33,120 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.iissMetaData.lockMin] > 216000
+2019-08-28 13:50:33,120 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.iissMetaData.lockMax] > 864000
+2019-08-28 13:50:33,120 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.iissCalculatePeriod] > 43200
+2019-08-28 13:50:33,120 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.termPeriod] > 43200
+2019-08-28 13:50:33,120 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.initialIRep] > 50000000000000000000000
+2019-08-28 13:50:33,120 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.prepRegistrationFee] > 2000000000000000000000
+2019-08-28 13:50:33,120 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.mainPRepCount] > 22
+2019-08-28 13:50:33,120 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.mainAndSubPRepCount] > 100
+2019-08-28 13:50:33,121 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.decentralizeTrigger] > 0.002
+2019-08-28 13:50:33,121 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.hostAddress] > 127.0.0.1
+2019-08-28 13:50:33,121 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.port] > 9000
+2019-08-28 13:50:33,121 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.genesis.nid] > 0x3
+2019-08-28 13:50:33,121 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.genesis.accounts] > [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]
+2019-08-28 13:50:33,121 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.blockConfirmInterval] > 10
+2019-08-28 13:50:33,121 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.blockConfirmEmpty] > True
+2019-08-28 13:50:33,121 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.verbose] > False
+2019-08-28 13:50:33,121 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.command] > start
+2019-08-28 13:50:33,121 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.config] > ./temp_conf.json
+2019-08-28 13:50:33,121 39392 4572194240 INFO icon_logger_util.py(152) [CONFIG.tbearsMode] > False
+2019-08-28 13:50:33,121 39392 4572194240 INFO icon_logger_util.py(145) ====================LOG CONFIG END======================
+2019-08-28 13:50:33,157 39392 4572194240 INFO icon_service.py(63) IconService ==========IconService Service params==========
+2019-08-28 13:50:33,157 39392 4572194240 INFO icon_service.py(64) IconService score_root_path : ./.score
+2019-08-28 13:50:33,158 39392 4572194240 INFO icon_service.py(65) IconService icon_score_state_db_root_path  : ./.statedb
+2019-08-28 13:50:33,158 39392 4572194240 INFO icon_service.py(66) IconService amqp_target  : 127.0.0.1
+2019-08-28 13:50:33,158 39392 4572194240 INFO icon_service.py(67) IconService amqp_key  :  7100
+2019-08-28 13:50:33,158 39392 4572194240 INFO icon_service.py(68) IconService icon_score_queue_name  : IconScore.loopchain_default.7100
+2019-08-28 13:50:33,158 39392 4572194240 INFO icon_service.py(69) IconService ==========IconService Service params==========
+2019-08-28 13:50:33,158 39392 4572194240 INFO icon_inner_service.py(55) IconInnerService icon_score_service open
+2019-08-28 13:50:34,328 39396 4553078208 INFO icon_logger_util.py(143) ====================LOG CONFIG START====================
+2019-08-28 13:50:34,328 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.hostAddress] > 127.0.0.1
+2019-08-28 13:50:34,329 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.port] > 9000
+2019-08-28 13:50:34,329 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.scoreRootPath] > ./.score
+2019-08-28 13:50:34,329 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.stateDbRootPath] > ./.statedb
+2019-08-28 13:50:34,329 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.log.logger] > tbears
+2019-08-28 13:50:34,329 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.log.level] > info
+2019-08-28 13:50:34,329 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.log.filePath] > ./tbears.log
+2019-08-28 13:50:34,329 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.log.colorLog] > True
+2019-08-28 13:50:34,329 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.log.outputType] > file
+2019-08-28 13:50:34,329 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.log.rotate.type] > bytes
+2019-08-28 13:50:34,329 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.log.rotate.maxBytes] > 10485760
+2019-08-28 13:50:34,329 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.log.rotate.backupCount] > 10
+2019-08-28 13:50:34,329 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.service.fee] > False
+2019-08-28 13:50:34,330 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.service.audit] > False
+2019-08-28 13:50:34,330 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.service.deployerWhiteList] > False
+2019-08-28 13:50:34,330 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.genesis.nid] > 0x3
+2019-08-28 13:50:34,330 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.genesis.accounts] > [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]
+2019-08-28 13:50:34,330 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.channel] > loopchain_default
+2019-08-28 13:50:34,330 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.amqpKey] > 7100
+2019-08-28 13:50:34,330 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.amqpTarget] > 127.0.0.1
+2019-08-28 13:50:34,330 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.blockConfirmInterval] > 10
+2019-08-28 13:50:34,330 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.blockConfirmEmpty] > True
+2019-08-28 13:50:34,330 39396 4553078208 INFO icon_logger_util.py(152) [CONFIG.config] > ./tbears_server_config.json
+2019-08-28 13:50:34,330 39396 4553078208 INFO icon_logger_util.py(145) ====================LOG CONFIG END======================
+2019-08-28 13:50:34,381 39396 4553078208 INFO block_manager.py(81) tbears_block_manager ==========tbears block_manager params==========
+2019-08-28 13:50:34,381 39396 4553078208 INFO block_manager.py(82) tbears_block_manager amqp_target : 127.0.0.1
+2019-08-28 13:50:34,381 39396 4553078208 INFO block_manager.py(83) tbears_block_manager amqp_key    : 7100
+2019-08-28 13:50:34,381 39396 4553078208 INFO block_manager.py(84) tbears_block_manager queue_name  : Channel.loopchain_default.7100
+2019-08-28 13:50:34,381 39396 4553078208 INFO block_manager.py(85) tbears_block_manager             : ChannelTxCreator.loopchain_default.7100
+2019-08-28 13:50:34,381 39396 4553078208 INFO block_manager.py(86) tbears_block_manager             : IconScore.loopchain_default.7100
+2019-08-28 13:50:34,382 39396 4553078208 INFO block_manager.py(87) tbears_block_manager ==========tbears block_manager params==========
+2019-08-28 13:50:34,633 39401 4611126720 INFO icon_logger_util.py(143) ====================LOG CONFIG START====================
+2019-08-28 13:50:34,633 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.log.logger] > tbears
+2019-08-28 13:50:34,633 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.log.level] > info
+2019-08-28 13:50:34,633 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.log.filePath] > ./tbears.log
+2019-08-28 13:50:34,633 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.log.colorLog] > True
+2019-08-28 13:50:34,633 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.log.outputType] > file
+2019-08-28 13:50:34,634 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.log.rotate.type] > bytes
+2019-08-28 13:50:34,634 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.log.rotate.maxBytes] > 10485760
+2019-08-28 13:50:34,634 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.log.rotate.backupCount] > 10
+2019-08-28 13:50:34,634 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.channel] > loopchain_default
+2019-08-28 13:50:34,634 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.port] > 9000
+2019-08-28 13:50:34,634 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.portDiffRestServiceContainer] > 1900
+2019-08-28 13:50:34,634 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.amqpKey] > 7100
+2019-08-28 13:50:34,634 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.amqpTarget] > 127.0.0.1
+2019-08-28 13:50:34,634 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.gunicornWorkerCount] > 9
+2019-08-28 13:50:34,635 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.disableV1Api] > True
+2019-08-28 13:50:34,635 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.restSslType] > 0
+2019-08-28 13:50:34,635 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.defaultSslCertPath] > resources/ssl_test_cert/cert.pem
+2019-08-28 13:50:34,635 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.defaultSslKeyPath] > resources/ssl_test_cert/key.pem
+2019-08-28 13:50:34,635 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.defaultSslTrustCertPath] > resources/ssl_test_ca/cert.pem
+2019-08-28 13:50:34,635 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.ipLocal] > 127.0.0.1
+2019-08-28 13:50:34,635 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.grpcTimeout] > 30
+2019-08-28 13:50:34,635 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.grpcRetry] > 5
+2019-08-28 13:50:34,635 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.restAdditionalTimeout] > 30
+2019-08-28 13:50:34,635 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.scoreQueryTimeout] > 120
+2019-08-28 13:50:34,635 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.wsHeartBeatTime] > 30
+2019-08-28 13:50:34,635 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.requestMaxSize] > 2097152
+2019-08-28 13:50:34,635 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.hostAddress] > 127.0.0.1
+2019-08-28 13:50:34,636 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.scoreRootPath] > ./.score
+2019-08-28 13:50:34,636 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.stateDbRootPath] > ./.statedb
+2019-08-28 13:50:34,636 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.service.fee] > False
+2019-08-28 13:50:34,636 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.service.audit] > False
+2019-08-28 13:50:34,636 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.service.deployerWhiteList] > False
+2019-08-28 13:50:34,636 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.genesis.nid] > 0x3
+2019-08-28 13:50:34,636 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.genesis.accounts] > [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]
+2019-08-28 13:50:34,636 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.blockConfirmInterval] > 10
+2019-08-28 13:50:34,636 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.blockConfirmEmpty] > True
+2019-08-28 13:50:34,636 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.verbose] > False
+2019-08-28 13:50:34,637 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.command] > start
+2019-08-28 13:50:34,637 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.config] > ./temp_conf.json
+2019-08-28 13:50:34,637 39401 4611126720 INFO icon_logger_util.py(152) [CONFIG.tbearsMode] > True
+2019-08-28 13:50:34,637 39401 4611126720 INFO icon_logger_util.py(145) ====================LOG CONFIG END======================
+2019-08-28 16:40:08,425 39420 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 771492461, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}}
+2019-08-28 16:40:08,425 42234 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 668088236, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}}
+2019-08-28 16:40:08,425 39421 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 741439157, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}}
+2019-08-28 16:40:08,429 39420 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 771492461, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:40:08,430 42234 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 668088236, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:40:08,428 57365 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 936531737, 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}
+2019-08-28 16:40:08,431 57365 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 936531737, 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:40:08,431 39418 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 1705122496, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}}
+2019-08-28 16:40:08,434 39418 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 1705122496, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:40:08,430 39421 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 741439157, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:40:08,427 39422 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 3934986231, 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}
+2019-08-28 16:40:08,436 39422 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 3934986231, 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:41:08,438 39422 4611126720 INFO version3.py(60) IconService_dispatch_v3 rest_server_v3 with response {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Server error"}, "id": 3934986231}
+2019-08-28 16:41:08,438 42234 4611126720 INFO version3.py(60) IconService_dispatch_v3 rest_server_v3 with response {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Server error"}, "id": 668088236}
+2019-08-28 16:41:08,439 39418 4611126720 INFO version3.py(60) IconService_dispatch_v3 rest_server_v3 with response {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Server error"}, "id": 1705122496}
+2019-08-28 16:41:08,437 39420 4611126720 INFO version3.py(60) IconService_dispatch_v3 rest_server_v3 with response {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Server error"}, "id": 771492461}
+2019-08-28 16:41:08,439 57365 4611126720 INFO version3.py(60) IconService_dispatch_v3 rest_server_v3 with response {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Server error"}, "id": 936531737}
+2019-08-28 16:41:08,437 39421 4611126720 INFO version3.py(60) IconService_dispatch_v3 rest_server_v3 with response {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Server error"}, "id": 741439157}
+2019-08-28 16:41:08,448 42234 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 1848182051, 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}
+2019-08-28 16:41:08,449 42234 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 1848182051, 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:41:08,449 57365 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 2498102681, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}}}
+2019-08-28 16:41:08,451 57365 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 2498102681, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:41:08,484 39419 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 2007077741, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'queryIScore', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}}
+2019-08-28 16:41:08,487 39419 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 2007077741, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'queryIScore', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:41:08,486 39416 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 1782686203, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'queryIScore', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}}
+2019-08-28 16:41:08,489 39416 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 1782686203, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'queryIScore', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:42:08,452 42234 4611126720 INFO version3.py(60) IconService_dispatch_v3 rest_server_v3 with response {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Server error"}, "id": 1848182051}
+2019-08-28 16:42:08,453 57365 4611126720 INFO version3.py(60) IconService_dispatch_v3 rest_server_v3 with response {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Server error"}, "id": 2498102681}
+2019-08-28 16:42:08,481 39422 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3861880342, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'queryIScore', 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}}}
+2019-08-28 16:42:08,481 39422 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3861880342, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'queryIScore', 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:42:08,486 39419 4611126720 INFO version3.py(60) IconService_dispatch_v3 rest_server_v3 with response {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Server error"}, "id": 2007077741}
+2019-08-28 16:42:08,489 39416 4611126720 INFO version3.py(60) IconService_dispatch_v3 rest_server_v3 with response {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Server error"}, "id": 1782686203}
+2019-08-28 16:42:08,494 57365 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3923968347, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getDelegation', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}}
+2019-08-28 16:42:08,495 57365 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3923968347, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getDelegation', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:42:08,497 39422 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 632876645, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getDelegation', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}}
+2019-08-28 16:42:08,498 39422 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 632876645, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getDelegation', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:43:08,484 39422 4611126720 INFO version3.py(60) IconService_dispatch_v3 rest_server_v3 with response {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Server error"}, "id": 3861880342}
+2019-08-28 16:43:08,510 57365 4611126720 INFO version3.py(60) IconService_dispatch_v3 rest_server_v3 with response {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Server error"}, "id": 3923968347}
+2019-08-28 16:43:08,519 39421 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 872944555, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getDelegation', 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}}}
+2019-08-28 16:43:08,524 39421 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 872944555, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getDelegation', 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:43:08,524 39422 4611126720 INFO version3.py(60) IconService_dispatch_v3 rest_server_v3 with response {"jsonrpc": "2.0", "error": {"code": -32000, "message": "Server error"}, "id": 632876645}
+2019-08-28 16:43:27,228 39422 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 2770319910, 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}
+2019-08-28 16:43:27,231 57365 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 690170272, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}}
+2019-08-28 16:43:27,232 39422 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 2770319910, 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:43:27,233 57365 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 690170272, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:43:27,239 39422 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 4126948048, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}}
+2019-08-28 16:43:27,241 39422 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 4126948048, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:43:27,241 39421 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 42792848, 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}
+2019-08-28 16:43:27,242 39421 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 42792848, 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:43:27,248 57365 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 1752651846, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}}
+2019-08-28 16:43:27,249 57365 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 1752651846, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:43:27,251 39421 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3420275782, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}}
+2019-08-28 16:43:27,253 39421 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3420275782, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-28 16:43:30,244 57365 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3576930113, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}}}
+2019-08-28 16:43:30,248 57365 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3576930113, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:48:12,664 53931 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3978809259, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}}
+2019-08-30 09:48:12,664 53906 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 395092778, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}}
+2019-08-30 09:48:12,666 53946 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3414721015, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}}
+2019-08-30 09:48:12,666 53953 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 448601872, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}}
+2019-08-30 09:48:12,669 53931 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3978809259, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:48:12,665 53942 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 2552168202, 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}
+2019-08-30 09:48:12,669 53906 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 395092778, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:48:12,670 53953 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 448601872, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:48:12,665 53950 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 2822548720, 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}
+2019-08-30 09:48:12,669 53946 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3414721015, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:48:12,670 53942 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 2552168202, 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:48:12,671 53950 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 2822548720, 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:48:37,584 53953 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 2575340077, 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}
+2019-08-30 09:48:37,586 53953 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 2575340077, 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:48:37,596 53953 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3278560903, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}}}
+2019-08-30 09:48:37,598 53953 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3278560903, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:49:00,107 53942 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 1123206109, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}}
+2019-08-30 09:49:00,107 53953 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 1762287993, 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}
+2019-08-30 09:49:00,108 53942 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 1123206109, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:49:00,109 53953 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 1762287993, 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:49:00,109 53950 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 2797715014, 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}
+2019-08-30 09:49:00,110 53950 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 2797715014, 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:49:00,110 53946 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 2604529800, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}}
+2019-08-30 09:49:00,112 53946 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 2604529800, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:49:00,112 53953 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3044131263, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}}
+2019-08-30 09:49:00,113 53953 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3044131263, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:49:00,118 53942 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 2890735675, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}}
+2019-08-30 09:49:00,120 53942 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 2890735675, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:49:05,197 53953 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 3266635417, 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}
+2019-08-30 09:49:05,199 53953 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 3266635417, 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:49:05,202 53953 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 796556717, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}}}
+2019-08-30 09:49:05,204 53953 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 796556717, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:50:04,368 53942 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 4001863104, 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}
+2019-08-30 09:50:04,370 53953 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 1486738891, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}}
+2019-08-30 09:50:04,371 53942 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 4001863104, 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:50:04,372 53946 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 3954888339, 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}
+2019-08-30 09:50:04,372 53953 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 1486738891, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:50:04,373 53946 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 3954888339, 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:50:04,374 53950 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 2824547520, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}}
+2019-08-30 09:50:04,375 53950 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 2824547520, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cx0000000000000000000000000000000000000000', 'dataType': 'call', 'data': {'method': 'getStake', 'params': {'address': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:50:04,376 53953 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 2563073882, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}}
+2019-08-30 09:50:04,377 53953 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 2563073882, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hx16bd4d667fa3bf941df062c64012b0c6bd4c72dd'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:50:04,380 53946 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3560689876, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}}
+2019-08-30 09:50:04,382 53946 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_call', 'id': 3560689876, 'params': {'from': 'hxbe258ceb872e08851f1f59694dac2558708ece11', 'to': 'cxf6bdc57d895d21be0b2f510895cf819f34bfd93c', 'dataType': 'call', 'data': {'method': 'balanceOf', 'params': {'_owner': 'hxc9eb72a7e325d6d5db0d81d5310933d8d38d0fa7'}}}} on http://127.0.0.1:9000/api/v3
+2019-08-30 09:50:09,466 53950 4611126720 INFO version3.py(50) IconService_dispatch_v3 rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 1937671909, 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}}
+2019-08-30 09:50:09,468 53950 4611126720 INFO version3.py(51) LOG 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getBalance', 'id': 1937671909, 'params': {'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb'}} on http://127.0.0.1:9000/api/v3

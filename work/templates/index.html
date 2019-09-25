@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="connectIconex">CONNECT-ICONEX</button>
+        <p id="response-address"></p>
+        <p id="item-list"></p>
+    </div>
+
+    <div>
+        Upload
+        <div>name <input type="text" id="item-name" size="20"></div>
+        <div>price <input type="number" id="price" size="45"></div>
+        <button id="upload">Upload</button>
+        <p id="item-id"></p>
+    </div>
+
+    <div>
+        View
+        <div>id <input type="number", id="view-id" size="20">
+            <button id="view">View</button>
+        </div>
+        <div>name price state seller buyer</div>
+        <p id="getItem">  </p>
+    </div>
+
+    <div>
+        Buy
+        <div>id <input type="number", id="buy-id" size="20">
+            <button id="buy">Buy</button>
+            <p id="buy-result"> </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/icon-project/icon-sdk-js@latest/build/icon-sdk-js.web.min.js"></script>
+    <script>
+        var IconService = window['icon-sdk-js']
+        var provider = new IconService.HttpProvider('https://bicon.net.solidwallet.io/api/v3')
+        var iconService = new IconService(provider)
+        var IconWallet = iconService.IconWallet
+        var IconAmount = IconService.IconAmount
+        var IconConverter = IconService.IconConverter
+        var IconBuilder = IconService.IconBuilder
+        var connect = document.getElementById('connectIconex')
+        var responseAddress = document.getElementById('response-address')
+        var itemList = document.getElementById('item-list')
+        var itemName = document.getElementById('item-name')
+        var price = document.getElementById('price')
+        var upload = document.getElementById('upload')
+        var itemId = document.getElementById('item-id')
+        var viewId = document.getElementById('view-id')
+        var view = document.getElementById('view')
+        var getItem = document.getElementById('getItem')
+        var buyId = document.getElementById('buy-id')
+        var buy = document.getElementById('buy')
+        var buyResult = document.getElementById('buy-result')
+        var funcname = ""
+
+        window.addEventListener("ICONEX_RELAY_RESPONSE", eventHandler, false);
+
+        function eventHandler(event) {
+            var type = event.detail.type
+            var payload = event.detail.payload
+            switch(type) {
+                
+                case "RESPONSE_ADDRESS":
+                    fromAddress = payload
+                    responseAddress.innerHTML = fromAddress
+
+                    setTimeout(function() {
+                        getList().then(function(result) {
+                            itemList.innerHTML = JSON.stringify(result);
+                            }
+                        )
+                    },
+                    function(error) {}, 4000)
+                    break
+
+                case "RESPONSE_JSON-RPC":
+                    console.log(event);
+
+                    switch(funcname) {
+                        case "addItem": 
+                            txHash = payload.result
+
+                            setTimeout(function() {
+                                iconService.getTransactionResult(txHash).execute().then(
+                                    function(result) {
+                                        getId().then(function(result) {
+                                            itemId.innerHTML = 'id: ' + parseInt(result, 16);
+                                            }
+                                        )
+                                    },
+                                    function(error) {
+                                    });
+                            }, 4000)
+                            break
+
+                        case "getItem":
+                            setTimeout(function(result) {
+                                getItem.innerHTML = payload.result;
+                            }, 3000)
+                            break
+
+                        case "buyItem":
+                            txHash = payload.result
+                            console.log(txHash)
+                            setTimeout(function() {
+                                console.log("setTimeout")
+                                iconService.getTransactionResult(txHash).execute().then(
+                                    function(result) {
+                                        console.log(result)
+                                        getId().then(function(result) {
+                                            console.log(result)
+                                            viewItem(IconConverter.toBigNumber(result)).then(function(result) {
+                                                console.log(result)
+                                                buyResult.innerHTML = result;
+                                            })
+                                        }
+                                        )
+                                    },
+                                    function(error) {
+                                        console.log("error")
+                                    });
+                            }, 4000)
+                            break
+                    }
+                default:
+            }
+        }
+        
+
+        connect.onclick = function() {
+            window.dispatchEvent(new CustomEvent('ICONEX_RELAY_REQUEST', {
+                detail: {
+                    type: 'REQUEST_ADDRESS'
+                }
+            }))
+        }
+        console.log(connect)
+        console.log(connect.log)
+
+        function getList() {
+            var callBuilder = new IconBuilder.CallBuilder;
+            var readOnlyData = callBuilder
+                .from(fromAddress)
+                .to('cxb6d6f9606af76056e28a06f647b2263f6d70cb28')
+                .method('getList')
+                .build()
+
+            data = iconService.call(readOnlyData).execute();
+            return data
+        }
+
+        upload.onclick = function() {
+            funcname = "addItem"
+            var callTransactionBuilder = new IconBuilder.CallTransactionBuilder
+            var callTransactionData = callTransactionBuilder
+                .from(fromAddress)
+                .to('cxb6d6f9606af76056e28a06f647b2263f6d70cb28')
+                .stepLimit(IconConverter.toBigNumber(1000000))
+                .nid(IconConverter.toBigNumber('3'))
+                .nonce(IconConverter.toBigNumber('1'))
+                .version(IconConverter.toBigNumber('3'))
+                .timestamp((new Date()).getTime() * 1000)
+                .method('addItem')
+                .params({
+                    _name: itemName.value,
+                    _price: IconConverter.toBigNumber(price.value)
+                })
+                .value(IconAmount.of(0.1, IconAmount.Unit.ICX).toLoop())
+                .build()
+            
+            var scoreData = JSON.stringify({
+                "jsonrpc": "2.0",
+                "method": "icx_sendTransaction",
+                "params": IconConverter.toRawTransaction(callTransactionData),
+                "id": 50889
+            })
+
+            var parsed = JSON.parse(scoreData)
+            if (parsed.method === "icx_sendTransaction" && !fromAddress) {
+                alert('Select the ICX Address')
+                return
+            }
+
+            window.dispatchEvent(new CustomEvent('ICONEX_RELAY_REQUEST', {
+                detail: {
+                    type: 'REQUEST_JSON-RPC',
+                    payload: parsed
+                }
+            }))
+            
+        }
+
+        function getId() {
+            var callBuilder = new IconBuilder.CallBuilder;
+            var readOnlyData = callBuilder
+                .from(fromAddress)
+                .to('cxb6d6f9606af76056e28a06f647b2263f6d70cb28')
+                .method('getId')
+                .build()
+
+            data = iconService.call(readOnlyData).execute();
+            return data
+        }
+
+        view.onclick = function() {
+            funcname = "getItem"
+            var callBuilder = new IconBuilder.CallBuilder;
+            var readOnlyData = callBuilder
+                .from(fromAddress)
+                .to('cxb6d6f9606af76056e28a06f647b2263f6d70cb28')
+                .method("getItem")
+                .params({
+                    _id: viewId.value
+                })
+                .build()
+
+            // data = iconService.call(readOnlyData).execute();
+            // // getId.innerHTML = data
+            // return data
+
+            console.log("2222")
+            var scoreData = JSON.stringify({
+                "jsonrpc": "2.0",
+                "method": "icx_call",
+                "params": readOnlyData,
+                "id": 50889
+            })
+            console.log("333")
+            var parsed = JSON.parse(scoreData)
+            window.dispatchEvent(new CustomEvent('ICONEX_RELAY_REQUEST', {
+                detail: {
+                    type: 'REQUEST_JSON-RPC',
+                    payload: parsed
+                }
+            }))
+        }
+
+        buy.onclick = function() {
+            funcname = "buyItem"
+            
+            setTimeout(function() {
+                getPrice().then(
+                    function(result) {
+                        buyItem(result)
+                    }
+                )
+            }, 4000)
+        }
+
+        function getPrice() {
+            var callBuilder = new IconBuilder.CallBuilder;
+            var readOnlyData = callBuilder
+                .from(fromAddress)
+                .to('cxb6d6f9606af76056e28a06f647b2263f6d70cb28')
+                .method("getPrice")
+                .params({
+                    _id: IconConverter.toBigNumber(buyId.value)
+                })
+                .build()
+
+            data = iconService.call(readOnlyData).execute();
+            return data
+        }
+        
+        function buyItem(_price) {
+            var callTransactionBuilder = new IconBuilder.CallTransactionBuilder
+            var callTransactionData = callTransactionBuilder
+                .from(fromAddress)
+                .to('cxb6d6f9606af76056e28a06f647b2263f6d70cb28')
+                .stepLimit(IconConverter.toBigNumber(1000000))
+                .nid(IconConverter.toBigNumber('3'))
+                .nonce(IconConverter.toBigNumber('1'))
+                .version(IconConverter.toBigNumber('3'))
+                .timestamp((new Date()).getTime() * 1000)
+                .method('buyItem')
+                .params({
+                    _id: IconConverter.toBigNumber(buyId.value)
+                })
+                .value(IconAmount.of(IconConverter.toBigNumber(_price), IconAmount.Unit.ICX).toLoop())
+                .build()
+            
+            var scoreData = JSON.stringify({
+                "jsonrpc": "2.0",
+                "method": "icx_sendTransaction",
+                "params": IconConverter.toRawTransaction(callTransactionData),
+                "id": 50889
+            })
+
+            var parsed = JSON.parse(scoreData)
+            if (parsed.method === "icx_sendTransaction" && !fromAddress) {
+                alert('Select the ICX Address')
+                return
+            }
+
+            window.dispatchEvent(new CustomEvent('ICONEX_RELAY_REQUEST', {
+                detail: {
+                    type: 'REQUEST_JSON-RPC',
+                    payload: parsed
+                }
+            }))
+        }
+
+        function viewItem(id) {
+            var callBuilder = new IconBuilder.CallBuilder;
+            var readOnlyData = callBuilder
+                .from(fromAddress)
+                .to('cxb6d6f9606af76056e28a06f647b2263f6d70cb28')
+                .method("getItem")
+                .params({
+                    _id: id
+                })
+                .build()
+            
+            data = iconService.call(readOnlyData).execute();
+            return data
+        }
+
+    </script>
+</body>
+</html>
